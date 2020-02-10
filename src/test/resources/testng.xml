@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Example Suite" verbose="5">
+	<parameter name="email" value="test@mail.com" />
+	<parameter name="name" value="Test User"/>
+	<parameter name="address" value="Fake Street 123"/>
+	<parameter name="cc" value="Visa"/>
+	<parameter name="cc_number" value="123456"/>
+	<parameter name="holder_name" value="User 1"/>
+	<parameter name="code" value="737"/>
+	<test name="Example Tests">
+<!-- 		<groups> -->
+<!-- 			<run> -->
+<!-- 				<exclude name="NotWorking" /> -->
+<!-- 				<include name="Working" /> -->
+<!-- 			</run> -->
+<!-- 		</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="academy.basic.AppTest"> -->
+<!-- 				<methods> -->
+					<!-- <exclude name="validateMenuIsClickable" /> -->
+					<!--<include name="validateOurPassionText" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+	</test>
+		<test name="Happy">
+		<groups>
+			<run>
+<!--				<include name="Happy Path" />-->
+ 				<include name="Page Factory"/>
+			</run>
+		</groups>
+ 		<classes>
+ 			<class name="academy.basic.AppAdvanced"/>
+<!--            <class name="academy.basic.AppTestImproved"/>-->
+ 		</classes>
+	</test>
+</suite>
+
+
+
+
+
